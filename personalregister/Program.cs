@@ -10,27 +10,20 @@ namespace personalregister
         {
             var employee = new Employee();
             Console.Write("Namn: ");
-
             employee.Name = Console.ReadLine();
-
             Console.Write("Lön: ");
-            
             employee.Salary = float.Parse(Console.ReadLine());
-           
 
             register.AddEmployee(employee);
         }
-
         private static void Main(string[] args)
         {
             if (args is null)
             {
                 throw new ArgumentNullException(nameof(args));
             }
-
             Register register = new Register();
             int menu = 0;
-
             while (menu != 2)
             {
                 Console.WriteLine("Välj med 1 eller 2");
