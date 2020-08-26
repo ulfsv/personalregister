@@ -14,7 +14,6 @@ namespace personalregister
 
         internal List<Employee> GetEmployees()
         {
-            //Shallow copy
             return new List<Employee>(_employees);
         }
     }
